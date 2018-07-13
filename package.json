@@ -1,0 +1,17 @@
+{
+  "name": "hustler-mdv-dealer-communication",
+  "version": "1.0.0",
+  "description": "Basically a quarterly collection of stories related to the MDV.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html"
+  },
+  "keywords": [],
+  "author": "Zac Remboldt",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^8.6.5",
+    "node-sass": "^4.9.2"
+  }
+}
