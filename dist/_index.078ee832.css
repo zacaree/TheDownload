@@ -11,9 +11,9 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   color: #363C47;
-  background-color: #5F6673; }
+  background-color: #DADDE3; }
 
-h1, h2, p {
+h1, h2, p, li, button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -21,6 +21,9 @@ h1 {
   font-family: 'bebas-neue', 'Roboto', sans-serif;
   font-weight: normal;
   font-size: 7rem; }
+
+h2 {
+  font-size: 2.5rem; }
 
 p {
   font-size: 2rem;
@@ -45,6 +48,8 @@ hr {
 
 button {
   border: none;
+  margin: 0;
+  padding: 0;
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s; }

@@ -11,5 +11,5 @@ console.log(mod3)
 const app = document.getElementById('app');
 const textFromFile = document.getElementById('textFromFile');
 
-const text = fileSystem.readFileSync(__dirname + '/../../copywriting.txt', 'utf8');
+const text = fileSystem.readFileSync(__dirname + '/../../copy.txt', 'utf8');
 textFromFile.innerHTML = text;
