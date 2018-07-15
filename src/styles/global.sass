@@ -1,0 +1,63 @@
+
+
+// Variables
+
+$p1:  #FFC324   // Goldenrod
+$p2:  #FEE86B   // Saffron
+  
+$d3:  #20242B   // Deep Space
+$d2:  #363C47   // Carbon
+$d1:  #5F6673   // Slate
+$mid: #989CA3   // Steel
+$l3:  #DADDE3   // Storm
+$l2:  #F0F2F5   // Glacier
+$l1:  #FFFFFF   // White
+
+$gradientX: linear-gradient(to right, $p1 0%, $p2 100%)
+$gradientY: linear-gradient(to bottom, $p1 0%, $p2 100%)
+
+$shadow: 0 12px 30px -6px hsla(0, 0%, 0%, 0.1)
+
+
+
+
+// Mixins
+
+=size($x, $y)
+  width: $x
+  height: $y
+
+
+=aspectRatio($percentage)
+  width: 100%
+  height: auto
+  padding: $percentage 0 0 0  // 34.37% = 100 / (w / h) = 100 / (640 / 220)
+
+
+
+
+// Global Styles
+
+html
+  box-sizing: border-box
+  font-size: 10px
+
+*, *:before, *:after
+  box-sizing: inherit
+
+body
+  margin: 0
+  font-family: Roboto, sans-serif
+  font-size: 22px
+
+
+.box1
+  height: 10px
+  width: 10px
+  background-color: $d2
+
+.box2
+  height: 1rem
+  width: 1rem
+  background-color: $d2
+  
