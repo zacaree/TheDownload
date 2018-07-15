@@ -1,1 +1,1 @@
-Here's some text that's being read from a .txt file using fs!
+This text is being read from a .txt file using fs!
