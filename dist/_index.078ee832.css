@@ -80,7 +80,7 @@ button {
 
 body {
   color: #363C47;
-  background-color: #DADDE3; }
+  background-color: #F0F2F5; }
 
 button {
   padding: 1.8rem 6.5rem;
@@ -98,9 +98,6 @@ button {
 .bebas {
   font-family: 'bebas-neue', 'Roboto', sans-serif;
   font-weight: normal; }
-
-.bold {
-  font-weight: 700; }
 
 .accentBar {
   width: 8rem;

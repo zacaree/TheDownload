@@ -162,7 +162,7 @@ console.log(_module3.mod2part1);
 console.log(_module3.mod2part2);
 console.log(_module5.default);
 
-var app = document.getElementById('app');
+// const app = document.getElementById('app');
 var textFromFile = document.getElementById('textFromFile');
 
 var text = "This text is being read from a .txt file using fs!";
@@ -196,7 +196,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '64461' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '63236' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

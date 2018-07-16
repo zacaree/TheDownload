@@ -8,7 +8,7 @@ console.log(mod2part1);
 console.log(mod2part2);
 console.log(mod3)
 
-const app = document.getElementById('app');
+// const app = document.getElementById('app');
 const textFromFile = document.getElementById('textFromFile');
 
 const text = fileSystem.readFileSync(__dirname + '/../../copy.txt', 'utf8');
