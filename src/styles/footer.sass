@@ -1,0 +1,37 @@
+footer
+  position: fixed
+  bottom: 0
+  left: 0
+  width: 100%
+  padding: 0 0 0 4rem
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 7rem
+  background-color: $l1
+  border-top: 1px solid $l3
+
+  .ctr-logo
+    flex: 12
+
+    & svg
+      height: 40px
+
+  .social
+    flex: 1
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100%
+    min-width: 5rem
+    max-width: 8rem
+    cursor: pointer
+    text-align: center
+    transition: 0.2s ease-in-out
+
+    &:hover
+      background-color: $l2
+
+    & svg
+      height: 2.4rem
+      fill: $d2

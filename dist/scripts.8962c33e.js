@@ -138,6 +138,38 @@ var jokes = {
 exports.default = jokes.getJoke();
 },{}],"../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/_empty.js":[function(require,module,exports) {
 
+},{}],"scripts/parallax.js":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var headerImg = document.getElementById('headerImg');
+var headerText = document.getElementById('headerText');
+var scrollYPosition = void 0;
+
+function handleScroll(e) {
+  scrollYPosition = window.scrollY;
+
+  transformBg(headerImg, 1 + scrollYPosition * 0.0006, 0.5 - scrollYPosition * 0.001);
+
+  transformText(headerText, scrollYPosition * 0.5, 1 - scrollYPosition * 0.0025);
+
+  requestAnimationFrame(handleScroll);
+}
+
+function transformBg(el, scale, opacity) {
+  el.style.transform = 'scale3d(' + scale + ', ' + scale + ', 1)';
+  el.style.opacity = opacity;
+}
+
+function transformText(el, yPos, opacity) {
+  el.style.transform = 'translate3d(0, ' + yPos + 'px, 0)';
+  el.style.opacity = opacity;
+}
+
+exports.default = handleScroll;
 },{}],"scripts/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -155,19 +187,25 @@ var _fs = require("fs");
 
 var _fs2 = _interopRequireDefault(_fs);
 
+var _parallax = require("./parallax");
+
+var _parallax2 = _interopRequireDefault(_parallax);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+window.addEventListener('DOMContentLoaded', _parallax2.default, false);
 
 console.log(_module2.default);
 console.log(_module3.mod2part1);
 console.log(_module3.mod2part2);
 console.log(_module5.default);
 
-var app = document.getElementById('app');
+// const app = document.getElementById('app');
 var textFromFile = document.getElementById('textFromFile');
 
-var text = "Here's some text that's being read from a text file!";
+var text = "This text is being read from a .txt file using fs!";
 textFromFile.innerHTML = text;
-},{"./module1":"scripts/module1.js","./module2":"scripts/module2.js","./module3":"scripts/module3.js","fs":"../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/_empty.js"}],"../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./module1":"scripts/module1.js","./module2":"scripts/module2.js","./module3":"scripts/module3.js","fs":"../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/_empty.js","./parallax":"scripts/parallax.js"}],"../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -196,7 +234,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '53458' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49528' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
