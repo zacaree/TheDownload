@@ -165,7 +165,7 @@ console.log(_module5.default);
 var app = document.getElementById('app');
 var textFromFile = document.getElementById('textFromFile');
 
-var text = "Here's some text that's being read from a .txt file using fs!";
+var text = "This text is being read from a .txt file using fs!";
 textFromFile.innerHTML = text;
 },{"./module1":"scripts/module1.js","./module2":"scripts/module2.js","./module3":"scripts/module3.js","fs":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/_empty.js"}],"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -196,7 +196,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '63680' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '64461' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
