@@ -95,6 +95,7 @@ button {
   background-image: -webkit-gradient(linear, left top, right top, from(#FFC324), to(#FEE86B));
   background-image: linear-gradient(to right, #FFC324 0%, #FEE86B 100%);
   border-radius: 3px;
+  color: #20242B;
   font-size: 2.4rem; }
   button:hover {
     -webkit-transform: translate3d(0, -3px, 0);
