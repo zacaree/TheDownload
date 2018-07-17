@@ -4,10 +4,9 @@ import mod3 from './module3';
 import fileSystem from 'fs';
 import parallax from './parallax';
 
+// window.addEventListener('DOMContentLoaded', parallax, false);
 
-window.addEventListener('DOMContentLoaded', parallax, false);
-
-
+parallax();
 
 
 

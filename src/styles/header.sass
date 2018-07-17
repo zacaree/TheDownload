@@ -8,25 +8,29 @@ header
   background-color: $d3
   text-align: center
   overflow: hidden
+  z-index: -1
 
-  h1
-    margin-bottom: 3rem
-  
-  h1, h6
-    color: $l2
-    z-index: 2
-
-  #headerImg
+  .heroImg
     position: absolute
     top: 0
     bottom: 0
+    z-index: 10
     width: 100%
-    background-color: $l2
-    background-image: url("./../img/hero.jpg")
-    background-position: center
-    background-size: cover
+    background:
+      color: $l2
+      image: url("./../img/hero.jpg")
+      position: center
+      size: cover
     opacity: 0.5
-    
+
+  .heroTxt
+    color: $l2
+    position: relative
+    z-index: 20
+
+  h1
+    margin-bottom: 3rem
+
 .description
   padding: 0.8rem 1.2rem
   border-bottom: 1px solid $l3

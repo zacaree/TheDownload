@@ -135,22 +135,25 @@ header {
   height: 700px;
   background-color: #20242B;
   text-align: center;
-  overflow: hidden; }
-  header h1 {
-    margin-bottom: 3rem; }
-  header h1, header h6 {
-    color: #F0F2F5;
-    z-index: 2; }
-  header #headerImg {
+  overflow: hidden;
+  z-index: -1; }
+  header .heroImg {
     position: absolute;
     top: 0;
     bottom: 0;
+    z-index: 10;
     width: 100%;
     background-color: #F0F2F5;
     background-image: url("hero.8a9d7eaa.jpg");
     background-position: center;
     background-size: cover;
     opacity: 0.5; }
+  header .heroTxt {
+    color: #F0F2F5;
+    position: relative;
+    z-index: 20; }
+  header h1 {
+    margin-bottom: 3rem; }
 
 .description {
   padding: 0.8rem 1.2rem;
@@ -176,7 +179,9 @@ footer {
           justify-content: space-between;
   height: 7rem;
   background-color: #FFFFFF;
-  border-top: 1px solid #DADDE3; }
+  border-top: 1px solid #DADDE3;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
   footer .ctr-logo {
     -webkit-box-flex: 12;
         -ms-flex: 12;
@@ -208,3 +213,7 @@ footer {
     footer .social svg {
       height: 2.4rem;
       fill: #363C47; }
+
+.hideFooter {
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px); }
