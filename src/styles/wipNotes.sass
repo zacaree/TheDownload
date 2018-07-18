@@ -1,0 +1,42 @@
+
+// A class to apply to unfinished content
+.wip
+  padding: 0.2rem 0.8rem
+  background-color: #FF7FF0
+  border-radius: 4px
+  color: black
+
+
+
+// Styles for the notes toggle button
+.hoverZone
+  position: fixed
+  top: 0rem
+  left: 0rem
+  padding: 2rem 10rem 10rem 2rem
+  transform: translateX(-12.8rem)
+  transition: 0.3s $zease
+
+  &:hover
+    transform: translateX(0rem)
+
+  .notesBtn
+    margin: 0
+    padding: 0.6rem 2rem
+    color: $l1
+    background:
+      color: #FF7FF0
+      image: none
+    border: 2px solid #FF7FF0
+    border-radius: 4px
+    font-size: 1.6rem
+    font-weight: 700
+    outline: none
+    
+    &:hover
+      background-color: transparentize(#FF7FF0, 1)
+      transform: translateY(0px)
+      color: #FF7FF0
+    &:active
+      transform: scale(0.96)
+

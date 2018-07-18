@@ -22,7 +22,12 @@ $gradientY: linear-gradient(to bottom, $p1 0%, $p2 100%)
 // Box Shadows
 $shadow: 0 12px 30px -6px hsla(0, 0%, 0%, 0.1)
 
+// Easing
+$zease:       cubic-bezier(0.165, 0.84, 0.44, 1)
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275)
+
 // Media Queries
+$mq1920: "(max-width: 1920px)"
 $mq1280: "(max-width: 1280px)"
 
 
@@ -73,7 +78,7 @@ h1, h2, h3, h4, h5, h6, p, li, button
 // ************************************************************
 // Font sizes are based on a modular scale // 4:5 – major third
 h1
-  font-size: 11.642rem
+  font-size: 14.552rem
   line-height: 11.642rem
   margin: 0 0 3.6rem
 
@@ -139,7 +144,7 @@ button
   transition: 0.2s
 
 
-  
+
 
 
 // *******
@@ -149,13 +154,5 @@ button
 .bold
   font-weight: 700
 
-
-
-
-
-// ************* 
-// Media Queries 
-// ************* 
-
-
-  
+.noMarBottom
+  margin-bottom: 0rem
