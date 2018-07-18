@@ -23,4 +23,4 @@ yarn-error.log*
 .sass-cache
 
 /.cache
-# /dist
+/dist
