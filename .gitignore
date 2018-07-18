@@ -2,7 +2,6 @@
 
 # dependencies
 /node_modules
-/.cache
 
 # testing
 /coverage
@@ -22,3 +21,6 @@ yarn-debug.log*
 yarn-error.log*
 
 .sass-cache
+
+/.cache
+# /dist

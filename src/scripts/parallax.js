@@ -17,7 +17,7 @@ const animateElements = {
     this.heroTxt.style.opacity = (1 - (scrollPosY * 0.0025)).toFixed(2);
   },
   handleFooter: function() {
-    if (scrollPosY > 300) {
+    if (scrollPosY > 200) {
       footer.classList.remove('hideFooter');
     } else {
       footer.classList.add('hideFooter');
