@@ -1,8 +1,10 @@
 
+$highlight: #00FFA9
+
 // A class to apply to unfinished content
 .wip
   padding: 0.2rem 0.8rem
-  background-color: #FF7FF0
+  background-color: $highlight
   border-radius: 4px
   color: black
 
@@ -23,20 +25,20 @@
   .notesBtn
     margin: 0
     padding: 0.6rem 2rem
-    color: $l1
+    color: $d2
     background:
-      color: #FF7FF0
+      color: $highlight
       image: none
-    border: 2px solid #FF7FF0
+    border: 2px solid $highlight
     border-radius: 4px
     font-size: 1.6rem
     font-weight: 700
     outline: none
     
     &:hover
-      background-color: transparentize(#FF7FF0, 1)
+      background-color: transparentize($highlight, .6)
       transform: translateY(0px)
-      color: #FF7FF0
+      color: $d2
     &:active
       transform: scale(0.96)
 
