@@ -2,19 +2,23 @@
   "name": "hustler-mdv-dealer-communication",
   "version": "1.0.0",
   "description": "Basically a quarterly collection of stories related to the MDV.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zacaree/TheDownload.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html"
+    "start": "parcel src/markup/_index.pug --out-dir dist"
   },
   "keywords": [],
   "author": "Zac Remboldt",
   "license": "MIT",
-  "dependencies": {
-    "autoprefixer": "^8.6.5",
-    "parallax": "0.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "node-sass": "^4.9.2"
+    "autoprefixer": "^9.0.0",
+    "node-sass": "^4.9.2",
+    "parcel-bundler": "^1.9.7",
+    "pug": "^2.0.3"
   }
 }
