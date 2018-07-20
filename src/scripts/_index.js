@@ -4,11 +4,13 @@
 // import fileSystem from 'fs';
 import parallax from './parallax';
 import wipNotes from './wipNotes';
+import videoHandler from './videoHandler';
 
 // window.addEventListener('DOMContentLoaded', parallax, false);
 
 parallax();
 wipNotes();
+videoHandler();
 
 
 

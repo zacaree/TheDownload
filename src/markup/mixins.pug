@@ -1,0 +1,8 @@
+
+mixin video(name, videoUrl)
+  .ctr-video
+    iframe(id=`${name}Video`, src=videoUrl, frameborder="0", allow="autoplay; encrypted-media", allowfullscreen)
+    div(class="ctr-videoCover" id=`${name}VideoCover`)
+      div(class="bgImg" id=`${name}Img`)
+      .playCircle
+      include ./../img/icon-play-90px.pug
