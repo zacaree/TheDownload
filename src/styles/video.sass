@@ -1,0 +1,70 @@
+
+.ctr-video
+  position: relative
+  padding-bottom: 56.25% // 16:9
+  padding-top: 25px
+  height: 0
+  margin: 4rem 0
+  background-color: white
+  border-radius: 4px
+  overflow: hidden
+  box-shadow: $shadow2
+
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+
+  .ctr-videoCover
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 10
+    background-color: #000
+    cursor: pointer
+    transition: 0.5s ease
+
+    &:hover
+      .playCircle
+        transform: translate(-50%, -50%) scale(1.1)
+      svg
+        transform: translate(-50%, -50%) scale(0.95)
+      .bgImg
+        opacity: 0.6
+
+    .bgImg
+      width: 100%
+      height: 100%
+      background-position: center
+      background-size: cover
+      transition: 0.3s $zease
+    #tigerImg
+      background-image: url('./../img/efrc-01.jpg')
+    #powerProImg
+      background-image: url('./../img/powerProCoverPhoto.jpg')
+
+    .playCircle
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      +size(11rem, 11rem)
+      background-color: $l1
+      border-radius: 11rem
+      opacity: 0.3
+      transition: 0.3s $easeOutBack
+
+    svg
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      fill: $l1
+      +size(9rem, 9rem)
+      transition: 0.3s $easeOutBack
+
