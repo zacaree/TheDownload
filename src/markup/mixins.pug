@@ -6,3 +6,14 @@ mixin video(name, videoUrl)
       div(class="bgImg" id=`${name}Img`)
       .playCircle
       include ./../img/icon-play-90px.pug
+
+
+mixin infoBox(position, name, location)
+  .ctr-infoBox
+    .accent
+    .ctr-upper
+      p.bold #{position}
+      h5.roboto #{name}
+    .ctr-lower
+      include ./../img/icon-locationPin.pug
+      p.subCopy #{location}
