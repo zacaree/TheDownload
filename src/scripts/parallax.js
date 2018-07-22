@@ -30,7 +30,10 @@ const animateElements = {
 // Callback for our scroll event - just keeps track of the last scroll value
 function onScroll() {
   scrollPosY = window.scrollY;
-  requestTick();
+  // Stop animating after header is off screen
+  if (scrollPosY < 800) {
+    requestTick();
+  }
 }
 
 
