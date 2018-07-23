@@ -33,6 +33,12 @@ function onScroll() {
   // Stop animating after header is off screen
   if (scrollPosY < 800) {
     requestTick();
+  } else {
+    // Problem: On page refresh lower on the page, footer is never triggered
+    // Solution: Check every 2 seconds when below 800px
+    setTimeout(function () {
+      requestTick();
+    }, 2000);
   }
 }
 
