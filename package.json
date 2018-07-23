@@ -9,8 +9,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/markup/_index.pug --out-dir dist",
-    "build": "parcel build src/markup/_index.pug --out-dir build"
+    "start": "parcel src/markup/index.pug --out-dir dist",
+    "build": "parcel build src/markup/index.pug --public-url ./ --out-dir build"
   },
   "keywords": [],
   "author": "Zac Remboldt",

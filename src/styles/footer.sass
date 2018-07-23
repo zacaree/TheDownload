@@ -1,10 +1,12 @@
+
+// Footer Bar - Pops up when page is scrolled 200px
 footer
   position: fixed
   bottom: 0
   left: 0
   width: 100%
   z-index: $z-footer
-  padding: 0 0 0 4rem
+  padding-left: 4rem
   display: flex
   align-items: center
   justify-content: space-between
@@ -17,7 +19,7 @@ footer
     flex: 18
 
     svg
-      height: 40px
+      height: 4rem
 
   .social
     flex: 1
@@ -37,6 +39,46 @@ footer
       height: 2.4rem
       fill: $d2
 
+@media #{$mq1280}
+  footer
+    height: 6rem
+    padding-left: 2rem
+
+    .ctr-logo svg
+      height: 3.6rem
+
+@media #{$mq768}
+  footer
+    .ctr-logo svg
+      height: 3rem
+    
+    .social
+      min-width: 4rem
+
+      svg
+        height: 1.8rem
+
+
+
 // Toggled by JS
 .hideFooter
   transform: translateY(70px)
+
+
+
+// FooterBgImg
+body
+  position: relative
+  height: 100%
+  padding-bottom: 40vw
+
+.footerBgImg
+  position: absolute
+  bottom: 7rem
+  left: 0
+  width: 100%
+  z-index: -1
+
+@media #{$mq1280}
+.footerBgImg
+  bottom: 6rem
