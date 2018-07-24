@@ -15,7 +15,9 @@
   "keywords": [],
   "author": "Zac Remboldt",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "smoothscroll-polyfill": "^0.4.3"
+  },
   "devDependencies": {
     "autoprefixer": "^9.0.0",
     "node-sass": "^4.9.2",

@@ -2,6 +2,7 @@
 let scrollPosY = 0; // Holds current scroll position
 let ticking = false;
 const footer = document.querySelector('footer');
+const backToTopBtn = document.querySelector('.backToTop')
 
 const animateElements = {
   heroImg: document.querySelector('.heroImg'),
@@ -19,8 +20,10 @@ const animateElements = {
   handleFooter: function() {
     if (scrollPosY > 200) {
       footer.classList.remove('hideFooter');
+      backToTopBtn.classList.remove('hideBackToTop');
     } else {
       footer.classList.add('hideFooter');
+      backToTopBtn.classList.add('hideBackToTop');
     }
   }
 }

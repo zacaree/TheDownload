@@ -60,9 +60,38 @@ footer
 
 
 
+// Back to top button
+.backToTop
+  position: absolute
+  right: 1.5rem
+  bottom: 10rem
+  max-width: 5rem
+  max-height: 5rem
+  background-color: $p1
+  background-image: $gradientY
+  border-radius: 3px
+  box-shadow: $shadow1
+  cursor: pointer
+  overflow: hidden
+  transition: transform 0.45s $easeOutBack
+
+  svg
+    +size(3rem, 3rem)
+    margin: 1rem
+    fill: $d3
+    transition: transform 0.45s $easeOutBack
+    
+  &:hover
+    svg
+      transform: translateY(-5.2rem)
+
+
+
 // Toggled by JS
 .hideFooter
-  transform: translateY(70px)
+  transform: translateY(7rem)
+.hideBackToTop
+  transform: translateY(14rem)
 
 
 

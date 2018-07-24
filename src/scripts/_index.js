@@ -5,12 +5,26 @@
 import parallax from './parallax';
 import wipNotes from './wipNotes';
 import videoHandler from './videoHandler';
+import smoothscroll from 'smoothscroll-polyfill';
+import backToTop from './backToTop';
 
-// window.addEventListener('DOMContentLoaded', parallax, false);
 
+// Handles the parallax effect on the header.
 parallax();
-wipNotes();
+// Handles custom cover images on videos
 videoHandler();
+// A polyfill that allows the native smoothscroll behaivor to work in all browsers.
+// Using it for "back to top" button.
+smoothscroll.polyfill();
+backToTop();
+
+
+
+
+// For notes while in production.
+wipNotes();
+
+
 
 
 
