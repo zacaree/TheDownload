@@ -5,6 +5,14 @@ export default function videoHandler() {
   const powerProVideo = document.getElementById('powerProVideo');
   const powerProVideoCover = document.getElementById('powerProVideoCover');
 
+  // This is an IE fix.
+  // Resets the video's "autoplay" attribute when page reloads. 
+  // Keeps video from playing automatically.
+  document.addEventListener("DOMContentLoaded", function(e) {
+    tigerVideo.src = tigerVideo.src.replace("&autoplay=1", "");
+    powerProVideo.src = powerProVideo.src.replace("&autoplay=1", "");
+  });
+
   tigerVideoCover.addEventListener('click', playTigerVideo, false)
   powerProVideoCover.addEventListener('click', playPowerProVideo, false)
 
