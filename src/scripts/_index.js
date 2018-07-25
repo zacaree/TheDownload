@@ -3,7 +3,7 @@
 // import mod3 from './module3';
 // import fileSystem from 'fs';
 import parallax from './parallax';
-import wipNotes from './wipNotes';
+// import wipNotes from './wipNotes';
 import videoHandler from './videoHandler';
 import smoothscroll from 'smoothscroll-polyfill';
 import backToTop from './backToTop';
@@ -22,7 +22,7 @@ backToTop();
 
 
 // For notes while in production.
-wipNotes();
+// wipNotes();
 
 
 
