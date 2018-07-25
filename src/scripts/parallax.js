@@ -1,8 +1,8 @@
 
 let scrollPosY = 0; // Holds current scroll position
 let ticking = false;
-const footer = document.querySelector('footer');
-const backToTopBtn = document.querySelector('.backToTop')
+
+
 
 const animateElements = {
   heroImg: document.querySelector('.heroImg'),
@@ -17,13 +17,16 @@ const animateElements = {
     this.heroTxt.style.transform = `translate3d(0, ${yPos}px, 0)`;
     this.heroTxt.style.opacity = (1 - (scrollPosY * 0.0025)).toFixed(2);
   },
+
+  footer: document.querySelector('footer'),
+  backToTopBtn: document.querySelector('.backToTop'),
   handleFooter: function() {
     if (scrollPosY > 200) {
-      footer.classList.remove('hideFooter');
-      backToTopBtn.classList.remove('hideBackToTop');
+      this.footer.classList.remove('hideFooter');
+      this.backToTopBtn.classList.remove('hideBackToTop');
     } else {
-      footer.classList.add('hideFooter');
-      backToTopBtn.classList.add('hideBackToTop');
+      this.footer.classList.add('hideFooter');
+      this.backToTopBtn.classList.add('hideBackToTop');
     }
   }
 }
