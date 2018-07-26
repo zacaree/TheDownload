@@ -1,1 +1,0 @@
-This text is being read from a .txt file using fs!

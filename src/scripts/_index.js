@@ -1,12 +1,9 @@
-// import mod1 from "./module1";
-// import { mod2part1, mod2part2 } from "./module2";
-// import mod3 from './module3';
-// import fileSystem from 'fs';
+
 import parallax from './parallax';
-// import wipNotes from './wipNotes';
 import videoHandler from './videoHandler';
 import smoothscroll from 'smoothscroll-polyfill';
 import backToTop from './backToTop';
+// import wipNotes from './wipNotes';
 
 
 // Handles the parallax effect on the header.
@@ -21,20 +18,12 @@ backToTop();
 
 
 
-// For notes while in production.
+// For highlighted notes while in development.
 // wipNotes();
 
 
 
 
-
-// console.log(mod1);
-// console.log(mod2part1);
-// console.log(mod2part2);
-// console.log(mod3)
-
-// // const app = document.getElementById('app');
-// const textFromFile = document.getElementById('textFromFile');
-// const text = fileSystem.readFileSync(__dirname + '/../../copy.txt', 'utf8');
-// textFromFile.innerHTML = text;
-
+// Signature
+console.log('%cDesigned & Developed Internally', 'font-weight: bold; color: #F99157;');
+console.log('www.zacremboldt.com');
