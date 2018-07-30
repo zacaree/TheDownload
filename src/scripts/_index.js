@@ -6,6 +6,9 @@ import backToTop from './backToTop';
 // import wipNotes from './wipNotes';
 
 
+
+
+
 // Handles the parallax effect on the header.
 parallax();
 // Handles custom cover images on videos
@@ -18,8 +21,10 @@ backToTop();
 
 
 
+
 // For highlighted notes while in development.
 // wipNotes();
+
 
 
 
