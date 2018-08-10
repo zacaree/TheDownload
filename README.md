@@ -1,5 +1,5 @@
 
-## Custom Parallax
+## Custom parallax
 ![](The-Download_Parallax.gif)  
 This parallax header was built from scratch partly because I wanted to learn, partly because I had a very specific look I was going for. I spent a lot of time learning about optimizing performance as this technique can be "heavy" if not done with care.
 
