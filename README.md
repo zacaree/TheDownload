@@ -3,12 +3,13 @@
 ![](The-Download_Parallax.gif)  
 This parallax header was built from scratch partly because I wanted to learn, partly because I had a very specific look I was going for. I spent a lot of time learning about optimizing performance as this technique can be "heavy" if not done with care.
 
+---
 
 ## Back-to-top interaction
 ![](The-Download_BackToTop.gif)  
 The footer is triggered to display when the user has scrolled 200px from the top of the page. The back-to-top button bounces up with a fun hover effect that demonstrates, with motion, what the button does.
 
-
+---
 
 ## My experience using Parcel - Things to remember:
 
