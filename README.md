@@ -1,5 +1,6 @@
 
 ![](The-Download_Parallax.gif)
+![](The-Download_BackToTop.gif)
 
 
 ### My experience using Parcel - Things to remember:
