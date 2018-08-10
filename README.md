@@ -1,6 +1,13 @@
 
+##Custom Parallax
 ![](The-Download_Parallax.gif)
+This parallax header was built from scratch partly because I wanted to learn, partly because I had a very specific look I was hoping to accomplish. I spent a lot of time learning about optimizing performance as this technique can be "heavy" if not done with care.
+
+
+## Back-to-top interaction
 ![](The-Download_BackToTop.gif)
+
+
 
 
 ### My experience using Parcel - Things to remember:
